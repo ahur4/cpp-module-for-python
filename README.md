@@ -123,7 +123,9 @@ PyMODINIT_FUNC PyInit_mymodule() {
 حالا برای تبدیل این کد سی پلاس پلاس باید اون رو کامپایل کنیم و به پایتون معرفیش کنیم که از کامپایلر `g++` استفاده میکنیم.
 
 دستور مورد نظر :  
-`g++ -shared -o mymodule.so -fPIC mymodule.cpp -I /path/to/python/include/python3.x`
+```bash
+g++ -shared -o mymodule.so -fPIC mymodule.cpp -I /path/to/python/include/python3.x
+```
 
 فلگ `-shared` به کامپایلر میگه که خروجی ایجاد شده یه کتابخونه پویا باشه یعنی با پسوند `.so` در لینوکس یا `.dll` در ویندوز.
 
